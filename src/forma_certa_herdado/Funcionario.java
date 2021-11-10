@@ -1,4 +1,4 @@
-package formaCerta;
+package forma_certa_herdado;
 
 public class Funcionario {
     private String nome;

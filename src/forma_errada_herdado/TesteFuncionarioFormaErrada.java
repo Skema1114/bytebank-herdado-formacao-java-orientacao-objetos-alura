@@ -1,4 +1,4 @@
-package formaErrada;
+package forma_errada_herdado;
 
 public class TesteFuncionarioFormaErrada {
     public static void main(String[] args) {

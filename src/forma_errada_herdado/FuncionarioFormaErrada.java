@@ -1,4 +1,4 @@
-package formaErrada;
+package forma_errada_herdado;
 
 public class FuncionarioFormaErrada {
     private String nome;

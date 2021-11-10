@@ -1,6 +1,6 @@
-package formaCerta;
+package forma_certa_herdado;
 
-public class TesteReferencias {
+public class TesteReferencia {
     public static void main(String[] args) {
         Funcionario gerFuncionario = new Gerente();
 
