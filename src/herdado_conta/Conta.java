@@ -1,6 +1,6 @@
 package herdado_conta;
 
-public class Conta {
+public abstract class Conta {
 
     private double saldo;
     private int agencia;
@@ -10,16 +10,14 @@ public class Conta {
 
     public Conta(int agencia, int numero){
         Conta.total++;
-        //System.out.println("O total de contas é " + Conta.total);
+//        System.out.println("O total de contas é " + Conta.total);
         this.agencia = agencia;
         this.numero = numero;
-        //this.saldo = 100;
-        //System.out.println("Estou criando uma conta " + this.numero);
+//        this.saldo = 100;
+//        System.out.println("Estou criando uma conta " + this.numero);
     }
 
-    public void depositar(double valor) {
-        this.saldo = this.saldo + valor;
-    }
+    public abstract void depositar(double valor);
 
     public boolean sacar(double valor) {
         if(this.saldo >= valor) {
@@ -41,6 +39,10 @@ public class Conta {
 
     public double getSaldo(){
         return this.saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public int getNumero(){

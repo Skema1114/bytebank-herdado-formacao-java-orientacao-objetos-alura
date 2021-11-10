@@ -1,8 +1,13 @@
 package herdado_conta;
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta {
     public ContaCorrente(int agencia, int numero) {
         super(agencia, numero);
+    }
+
+    @Override
+    public void depositar(double valor) {
+        super.setSaldo(super.getSaldo() + valor);
     }
 
     @Override

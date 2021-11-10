@@ -1,14 +1,11 @@
 package forma_certa_herdado;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
 
-    public double getBonificacao() {
-        System.out.println("Chamando o método de bonificação do FUNCIONARIO");
-        return this.salario * 0.10;
-    }
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;

@@ -6,26 +6,26 @@ public class TesteReferencia {
 
         Gerente gerente = new Gerente();
         gerente.setNome("João");
-        gerente.setSalario(1000);
+        gerente.setSalario(5000);
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Maria");
-        funcionario.setSalario(1000);
+//         Funcionario funcionario = new Funcionario();
+//         funcionario.setNome("Maria");
+//         funcionario.setSalario(1000);
 
         EditorVideo editorVideo = new EditorVideo();
         editorVideo.setNome("Pedro");
-        editorVideo.setSalario(1000);
+        editorVideo.setSalario(2500);
 
         Designer designer = new Designer();
         designer.setNome("Paulo");
-        designer.setSalario(1000);
+        designer.setSalario(2000);
 
         String nome = gerente.getNome();
         System.out.println(nome);
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registrar(gerente);
-        controle.registrar(funcionario);
+//         controle.registrar(funcionario);
         controle.registrar(editorVideo);
         controle.registrar(designer);
 
