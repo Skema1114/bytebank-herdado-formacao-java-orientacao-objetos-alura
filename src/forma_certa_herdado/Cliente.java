@@ -1,20 +1,20 @@
 package forma_certa_herdado;
 
 public class Cliente implements Autenticavel {
-    private int senha;
+    private AutenticacaoUtil autenticador;
+
+    public Cliente() {
+        this.autenticador = new AutenticacaoUtil();
+    }
 
     @Override
     public boolean autenticar(int senha) {
-        if (this.senha == senha) {
-            return  true;
-
-        } else {
-            return false;
-        }
+        boolean autenticou = this.autenticador.autenticar(senha);
+        return autenticou;
     }
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.autenticador.setSenha(senha);
     }
 }
